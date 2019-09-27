@@ -1,12 +1,18 @@
-CREATE DATABASE chat;
+CREATE DATABASE chat2;
 
-USE chat;
+USE chat2;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
+  id int not null primary key,
+  text varchar(255) not null
 );
 
-/* Create other tables and define schemas for them here! */
+CREATE TABLE users (
+  id int not null primary key,
+  username varchar(50) not null
+);
+
+
 
 
 
